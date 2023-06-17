@@ -5,10 +5,10 @@ import (
 	"sync"
 	"time"
 
+	"github.com/aaqaishtyaq/go-rabbitmq/internal/connectionmanager"
+	"github.com/aaqaishtyaq/go-rabbitmq/internal/dispatcher"
+	"github.com/aaqaishtyaq/go-rabbitmq/internal/logger"
 	amqp "github.com/rabbitmq/amqp091-go"
-	"github.com/wagslane/go-rabbitmq/internal/connectionmanager"
-	"github.com/wagslane/go-rabbitmq/internal/dispatcher"
-	"github.com/wagslane/go-rabbitmq/internal/logger"
 )
 
 // ChannelManager -
