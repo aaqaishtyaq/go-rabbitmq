@@ -34,11 +34,3 @@ func (l stdDebugLogger) Warnf(format string, v ...interface{}) {
 func (l stdDebugLogger) Infof(format string, v ...interface{}) {
 	log.Printf(fmt.Sprintf("%s INFO: %s", loggingPrefix, format), v...)
 }
-
-// Debugf -
-func (l stdDebugLogger) Debugf(format string, v ...interface{}) {
-	log.Printf(fmt.Sprintf("%s DEBUG: %s", loggingPrefix, format), v...)
-}
-
-// Tracef -
-func (l stdDebugLogger) Tracef(format string, v ...interface{}) {}
